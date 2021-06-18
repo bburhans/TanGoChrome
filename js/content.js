@@ -1,4 +1,4 @@
-console.log('in content script');
+// console.log('in content script');
 
 var body_text_raw = document.body.innerText;
 function isKana(ch){
@@ -50,9 +50,9 @@ function refreshPage(){
     chrome.runtime.sendMessage(payload);
 }
 chrome.runtime.onMessage.addListener(msgObj =>{
-    console.log(msgObj)
+    // console.log(msgObj)
     if(msgObj.type == "refresh"){
-        console.log("msgObj type is refresh")
+        // console.log("msgObj type is refresh")
         refreshPage();
     }
 });

@@ -1,7 +1,7 @@
 {
     "name":"TanGo",
     "description": "Simple and quick way to check word and kanji frequencies on the web.",
-    "version": "0.001",
+    "version": "0.0.1",
     "manifest_version": 2,
     "icons":{
         "16": "./images/16x16.png",
@@ -26,6 +26,10 @@
         }
     ],
     "options_page": "./html/options.html",
+    "options_ui": {
+        "page": "./html/options.html",
+        "browser_style": true
+    },
     "browser_action":{
         "default_popup":"./html/popup.html"
     }

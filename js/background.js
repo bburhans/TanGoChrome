@@ -1,5 +1,5 @@
 // Written (with love) by Lex Whalen
-console.log("in the background");
+// console.log("in the background");
 
 class HashMap{
     // converts and array into 
@@ -90,7 +90,7 @@ class displayData{
         // we sent a payload of format: [wordStr, kanjiArr]
         chrome.runtime.onMessage.addListener((payload,sender,sendResponse)=>{
             // for debugging
-            console.log('background: received response')
+            // console.log('background: received response')
             // console.log(response);
             // now that we got message update db
             this.updateDatabase(payload);
@@ -107,7 +107,7 @@ class displayData{
                 if(word.length < 4){
                     var diff = 4 - word.length;
                     word = word.padEnd(4,' ');
-                    console.log(word + ":");
+                    // console.log(word + ":");
                 }
                 var sub_string = word + " : " + freq;
                 str += sub_string;

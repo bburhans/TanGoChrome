@@ -65,7 +65,7 @@ function showKanji(){
     // populates the kanji display
     if(_bgData.getSortedKanjiArr() != undefined ||
         _bgData.getSortedKanjiArr() != ""){
-        console.log(_bgData.kanjiArrToStr());
+        // console.log(_bgData.kanjiArrToStr());
         _html_display__kanji.innerText = _bgData.kanjiArrToStr();
     }
     else{
@@ -123,6 +123,6 @@ function refreshBtnFunc(){
 
 // mapping to btns
 _btn__refresh.addEventListener("click",()=>{
-    console.log('click');
+    // console.log('click');
     refreshBtnFunc();
 })
